@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Last American | Project Gutenberg</title>
+<link rel="icon" href="images/0-00_01s.jpg" type="image/x-cover">
+
+<style>
+
+    body { margin-left: 10%;
+           margin-right: 10%;
+         text-align: justify;
+        }
+
+    p.bodytext {font-size: 120%; font-family: "Georgia"}
+
+    p {  margin-top: .75em;
+         margin-bottom: .75em;
+      }
+    H1,H2,H3,H4,H5,H6 {
+         text-align: center; /* all headings centered */
+         }
+    hr              {text-align: center; width: 50%;}
+    hr.full         {width: 100%;}
+    hr.short        {text-align: center; width: 20%;}
+    hr.tb           {text-align: left; border-top: 1px dotted #000; color: #fff; background-color: #fff; width: 40%;}
+
+
+    table.allbnomar { border : thin solid black; border-collapse: collapse; }    /* Thin borders, no additional margins defined. */
+    table.allb { border : thin solid black; border-collapse: collapse; margin-left: 4em  } /* Thin borders, 4em margin on left. */
+    table.tpbtb { border-top : thin solid black; border-bottom : thin solid black; border-collapse: collapse; margin-left: 4em  } /* Thin borders at top and bottom. */
+    table.allbctr { border : thin solid black; border-collapse: collapse;
+ margin-left: auto; margin-right: auto; } /* Thin borders, centered. */
+    table.nob  { margin-left: 4em } /* No borders, additional left margin defined.  */
+    table.nobctr  { margin-left: auto; margin-right: auto; }   /* No borders, centered.  */
+
+    table.cillo  { margin-left: auto; margin-right: auto; width: 45%; }  /* Color illustrations. No borders, centered, relative size defined.  */
+    table.bwillo  { margin-left: auto; margin-right: auto; font-variant: small-caps; }  /* B&#38;W illustrations. No borders, centered, caption in small caps.  */
+
+    td.allb { border : thin solid black; padding-left: 0.5em; padding-right: 0.5em; }
+    td.spac { padding-left: 1em; padding-right: 1em; padding-top: 1em; padding-bottom: 1em; }
+    td.tpbtb { border-top : thin solid black; border-bottom : thin solid black; padding-left: 1em; padding-right: 1em; }
+    td.spacsingle { padding-left: 1em; padding-right: 1em; }
+    td.nspac { padding-left: 0em; padding-right: 0em; }
+    td.vertb { border-left : thin solid black; border-right : thin solid black; padding-left: 0.5em; padding-right: 0.5em; }
+    td.vertbotb { border-left : thin solid black; border-right : thin solid black; border-bottom : thin solid black; padding-left: 0.5em; padding-right: 0.5em; }
+    td.verttopb { border-left : thin solid black; border-right : thin solid black; border-top : thin solid black; padding-left: 0.5em; padding-right: 0.5em; }
+    .single p      {margin: 0;}
+    .spacsingle p    {margin: 0;}
+
+
+    a:link {color:blue; text-decoration:none}
+    a:visited {color:blue; text-decoration:none}
+    a:hover {color:red}
+    link {color:blue; text-decoration:none}
+
+    .noflo                {margin-bottom: 1em; text-align: left;}
+    .noflo .stanza        {margin: 1em 0em 1em 0em;}
+    .noflo p              {margin: 0; padding-left: 3em; text-indent: -3em;}
+    .noflo p.i2           {margin-left: 1em;}
+    .noflo p.i16          {margin-left: 8em;}
+
+
+    .ccaption {text-align: center; margin-top: -1em; margin-bottom: 1em; font-size: 120%; }
+    .bwcaption {text-align: center; margin-top: -1em; font-variant: small-caps;}
+    .pubmark  {text-align: right; margin-top: -1em; font-size: small;}
+    .center   {text-align: center; }
+    .cenhead  {text-align: center;  margin-top: 1em; font-size: 150%; }
+    .bigtext  {font-size: larger; }
+    .jdate    {text-align: right; margin-right:25%; font-size: 120%; font-family: "Georgia"}    /* Format for dates at start of journal entries. */
+    .stagedir {text-align: left;  vertical-align: top; }               /* Format for the dialogs between characters. */
+    .right    {text-align: right; }
+    .t        {vertical-align: top; }
+    .tr       {vertical-align: top;}
+    .tc       {vertical-align: top;}
+    .tr p     {text-align: right;}
+    .tc p     {text-align: center;}
+    .m        {vertical-align: middle; }
+    .mr       {vertical-align: middle;}
+    .mc       {vertical-align: middle;}
+    .mr p     {text-align: right;}
+    .mc p     {text-align: center;}
+    .b        {vertical-align: bottom; }
+    .vol      {/*font-weight: bold;*/ font-size: small;}
+    .grk      {font-style: normal;
+  font-family:"Palatino Linotype","New Athena Unicode",Gentium,"Lucida Grande", Galilee, "Arial Unicode MS", sans-serif;}
+
+    sup       {font-style: normal; font-size: small;}
+    pre       {font-family: "Courier New", Courier, monospace; margin-left: 1em; }
+    .sc       {font-variant: small-caps; }
+    .normaltx {font-variant: normal; }
+    .scac     {font-size: small;}
+    .linenum  {position: absolute; top: auto; left: 25%;} /* poetry number */
+    blockquote {margin-left: 2em; margin-right: 2em; }
+    blockquote.b1n {font-size: medium; }
+    blockquote.b1s {font-size: small; }
+    .pagenum  {position: absolute; left: 92%; font-size: smaller; text-align: right; font-style: normal;} /* page numbers */
+    .note     {margin-left: 2em; margin-right: 2em; font-family: "Georgia"
+               }
+
+    span.rightnote {position: absolute; left: 92%; right: 1%; font-size: 0.7em; text-align: left }
+    span.extra   {border-bottom: thin dotted green;}
+    span.correction {border-bottom: thin dotted red;}
+    span.special {text-decoration: none;}
+    span.intlim  {font-size:small; position:relative; top:-2ex; left:-0.4em;}
+    span.lower   {position:relative; top:0.5ex;}
+    span.over    {text-decoration: overline;}
+    span.under   {text-decoration: underline;}
+    span.pbar    {position:relative; top:0.7ex; left:0.4em;}
+    span.sc      {font-variant: small-caps; }
+    .nobo  {border: thin;}
+    .red   {color: red;}
+    .figure, .figcenter, .figright, .figleft
+              {padding: 1em; margin: 0; text-align: center; }
+    .figure img, .figcenter img, .figright img, .figleft img
+              {border: none;}
+    .figure p, .figcenter p, .figright p, .figleft p
+              {margin: 0; text-indent: 1em;}
+
+    .figcenter {margin: auto;}
+    .figright {float: right;}
+    .figleft  {float: left;}
+    img.middle { border: none; vertical-align: middle }
+
+    </style>
+   </head>
+<body>
+<div>*** START OF THE PROJECT GUTENBERG EBOOK 27307 ***</div>
+
+<div class="figcenter">
+    <img src="images/0-00_01s.jpg" alt="Image: Cover Art." title="Cover Art">
+<br>
+<br>
+</div>
+
+<h2>THE LAST AMERICAN</h2>
+
+<div class="figcenter">
+    <img src="images/0-00_02s.jpg" alt="Image: Hunched eagle." >
+<br>
+</div>
+
+
+
+
+<table class="allbctr">
+
+ <tr>
+  <td class="spac">
+   <div class="figcenter" >
+    <img src="images/0-00_03s.jpg" alt="By J. A. Mitchell." title="By J. A. Mitchell" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <HR>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="sc">Amos Judd <br>
+    The Pines of Lory <br>
+    The Last American <br>
+     That First Affair <br>
+     Gloria Victis <br>
+     Life's Fairy Tales <br> </p>
+  </td>
+ </tr>
+</table>
+
+<div>
+<br>
+<br>
+</div>
+
+<table class="cillo" >
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/0-00_04s.jpg" alt="Image: &#38;ldquo;--In the soft earth was the imprint of human feet!&#38;rdquo;" title="Frontis" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "--In the soft earth was the imprint of human feet!" </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+
+
+
+
+<h1>The Last American</h1 >
+
+<p class="cenhead">
+
+<i>A Fragment</i> <span class="sc ">from The Journal of <br>
+KHAN-LI</span>, <i>Prince of Dimph-Yoo-Chur <br>
+and Admiral in the Persian Navy</i>
+
+<br>
+<span class="sc">Presented by J. A. MITCHELL</span><br>
+<br>
+EDITION DE LUXE <br>
+Illustrated in Color by F. W. Read <br>
+With Decorative Designs by <br>
+<span class="sc">Albert D. Blashfield </span> <br>
+and Illustrations by <br>
+the Author <br>
+<br>
+<i>NEW YORK</i><br>
+FREDERICK A. STOKES COMPANY<br>
+<i>PUBLISHERS</i><br>
+<br>
+<br>
+</p>
+
+
+
+<p class="center"  >
+<i>1889</i> <span class="sc">By Frederick A. Stokes and Brother</span><br>
+<br>
+<i>1902</i> <span class="sc">By Frederick A. Stokes Company</span><br>
+<br>
+<br>
+</p>
+
+
+
+<p class="center"  >
+TO<br>
+THOSE THOUGHTFUL PERSIANS<br>
+WHO CAN READ A WARNING IN THE<br>
+SUDDEN RISE<br>
+AND SWIFT EXTINCTION<br>
+OF<br>
+A FOOLISH PEOPLE<br>
+THIS VOLUME IS<br>
+DEDICATED<br>
+<br>
+</p>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+    <img src="images/0-00_05s.jpg" alt="Image: A few words by Hedful.">
+</div>
+
+<h3>A FEW WORDS BY </h3>
+<h1>HEDFUL</h1>
+
+<p class="center bigtext">
+SURNAMED "THE AXIS OF WISDOM"<br>
+<br>
+<i>Curator of the Imperial Museum at Shiraz.<br>
+Author of "The Celestial Conquest of Kaly-phorn-ya,"<br>
+and of "Northern Mehrika under the Hy-Bernyan Rulers"</i><br>
+</p>
+
+
+<div class="figleft">
+   <img src="images/0-00_06s.jpg" alt="T" >
+</div>
+<p class="bodytext">
+he astounding discoveries of Khan-li of Dimph-yoo-chur have thrown
+floods of light upon the domestic life of the Mehrikan people. He
+little realized when he landed upon that sleeping continent what a
+service he was about to render history, or what enthusiasm his
+discoveries would arouse among Persian archæologists.</p>
+
+<p class="bodytext">Every student of antiquity is familiar with these facts.</p>
+
+<p class="bodytext">But for the benefit of those who have yet to acquire a knowledge of
+this extraordinary people, I advise, first, a visit to the Museum at
+Teheran in order to excite their interest in the subject, and second,
+the reading of such books as N&#333;f&#363;hl's "What we Found in the West," and
+N&#333;z-yt-ahl's "History of the Mehrikans." The last-named is a complete
+and reliable history of these people from the birth of the Republic
+under George-wash-yn-tun to the year 1990, when they ceased to exist
+as a nation. I must say, however, that N&#333;z-yt-ahl leaves the reader
+much confused concerning the period between the massacre of the
+Protestants in 1927, and the overflow of the Murfey dynasty in 1940.</p>
+
+<div class="figright">
+  <img src="images/0-00_07s.jpg" alt="Image: Decorative pillar." >
+</div>
+
+<p class="bodytext">He holds the opinion with many other historians that the Mehrikans
+were a mongrel race, with little or no patriotism, and were purely
+imitative; simply an enlarged copy of other nationalities extant at
+the time. He pronounces them a shallow, nervous, extravagant people,
+and accords them but few redeeming virtues. This, of course, is just;
+but nevertheless they will always be an interesting study by reason of
+their rapid growth, their vast numbers, their marvellous mechanical
+ingenuity and their sudden and almost unaccountable disappearance.</p>
+
+<p class="bodytext">The wealth, luxury, and gradual decline of the native population; the
+frightful climatic changes which swept the country like a mower's
+scythe; the rapid conversion of a vast continent, alive with millions
+of pleasure-loving people, into a silent wilderness, where the sun and
+moon look down in turn upon hundreds of weed-grown cities,&#38;mdash;all this
+is told by N&#333;z-yt-ahl with force and accuracy. </p>
+
+</td></tr>
+</table>
+
+
+
+
+<div class="figcenter">
+  <img src="images/0-00_08s.jpg" alt="Image: &#38;ldquo;Here's Truth. 'Tis a bitter pill but good physic.&#38;rdquo;">
+<br>
+</div>
+
+
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-10_1s.jpg" alt="Image: Aboard the Z&#333;tuhb in the year 2951 10th May">
+<br>
+</div>
+
+
+
+<table class="nob">
+ <tr>
+  <td class="right bigtext">
+    <p class="bodytext"> ABOARD THE ZL&#332;TUHB IN THE YEAR 2951 </p>
+
+  </td>
+
+  <td >
+   <div class="figcenter">
+    <img src="images/5-10_2s.jpg" alt="Image: Ship.">
+   </div>
+  </td>
+ </tr>
+</table>
+
+<p class="jdate"><i>10th May </i></p>
+
+
+<div class="figleft">
+  <img src="images/5-10_3s.jpg" alt="T" >
+</div>
+<p class="bodytext">here is land ahead!</p>
+
+<p class="bodytext">Grip-til-lah was first to see it, and when he shouted the tidings my
+heart beat fast with joy. The famished crew have forgotten their
+disconsolate stomachs and are dancing about the deck. 'T is not I,
+forsooth, who shall restrain them! A month of emptiness upon a heavy
+sea is preparation for any folly. N&#333;f&#363;hl alone is without enthusiasm.
+The old man's heart seems dead.</p>
+
+<div class="figright">
+  <img src="images/5-10_4s.jpg" alt="Image: Ship." >
+</div>
+
+<p class="bodytext">We can see the land plainly, a dim strip along the western horizon. A
+fair wind blows from the northeast, but we get on with cruel
+hindrance, for the <i>Zl&#333;tuhb</i> is a heavy ship, her bluff bow and
+voluminous bottom ill fitting her for speed.</p>
+
+<p class="bodytext">The land, as we near it, seems covered with trees, and the white breakers
+along the yellow beach are a welcome sight.</p>
+
+</td></tr>
+</table>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-11_1s.jpg" alt="Eleventh May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>11th May </i></p>
+
+
+<div class="figleft">
+  <img src="images/5-11_2s.jpg" alt="S" >
+</div>
+<p class="bodytext">ighted a fine harbor this afternoon, and are now at anchor in it.</p>
+
+<div class="figright">
+  <img src="images/5-11_3s.jpg" alt="Image: Sailor with telescope." >
+</div>
+
+<p class="bodytext">Grip-til-lah thinks we have reached one of the western islands mentioned by
+Ben-a-Bout. N&#333;f&#363;hl, however, is sure we are further North.</p>
+
+</td></tr>
+</table>
+
+<div class="figcenter">
+  <img src="images/5-12_1s.jpg" alt="Twelfth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>12th May </i></p>
+
+<div class="figleft">
+  <img src="images/5-12_2s.jpg" alt="W" >
+</div>
+<p class="bodytext">hat a change has come over N&#333;f&#363;hl! He is the youngest man aboard. We
+all share his delight, as our discoveries are truly marvellous. This
+morning while I was yet in my bunk he ran into the cabin and,
+forgetting our difference in rank, seized me by the arm and tried to
+drag me out. His excitement so had the better of him that I captured
+little meaning from his words. Hastening after him, however, I was
+amazed to see such ancient limbs transport a man so rapidly. He
+skipped up the narrow stairs like a heifer and, young though I am, it
+was faster than I could follow.</p>
+
+<p class="bodytext">But what a sight when I reached the deck! We saw nothing of it
+yesterday, for the dusk of evening was already closing about us when
+we anchored.</p>
+
+<p class="bodytext">Right ahead, in the middle of the bay, towered a gigantic statue, many
+times higher than the masts of our ship. Beyond, from behind this
+statue, came the broad river upon whose waters we were floating, its
+surface all a-glitter with the rising sun. To the East, where N&#333;f&#363;hl
+was pointing, his fingers trembling with excitement, lay the ruins of
+an endless city. It stretched far away into the land beyond, further
+even than our eyes could see. And in the smaller river on the right
+stood two colossal structures, rising high in the air, and standing
+like twin brothers, as if to guard the deserted streets beneath. Not a
+sound reached us&#38;mdash;not a floating thing disturbed the surface of the
+water. Verily, it seemed the sleep of Death.</p>
+
+<p class="bodytext">I was lost in wonder.</p>
+
+<p class="bodytext">As we looked, a strange bird, like a heron, arose with a hoarse cry
+from the foot of the great image and flew toward the city.</p>
+
+<p class="bodytext">"What does it all mean?" I cried. "Where are we?"</p>
+
+<p class="bodytext">"Where indeed!" said N&#333;f&#363;hl. "If I knew but that, O Prince, I could
+tell the rest! No traveller has mentioned these ruins. Persian history
+contains no record of such a people. Allah has decreed that we
+discover a forgotten world."</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-12_3s.jpg" alt="Image: The city of ruins.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The City of Ruins </p>
+
+  </td>
+ </tr>
+</table>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">Within an hour we landed, and found ourselves in an ancient street,
+the pavements covered with weeds, grass, and flowers, all crowding
+together in wild neglect. Huge trees of great antiquity thrust their
+limbs through windows and roofs and produced a mournful sight. They
+gave a welcome shade, however, as we find the heat ashore of a
+roasting quality most hard to bear. The curious buildings on either
+side are wonderfully preserved, even sheets of glass still standing in
+many of the iron window-frames.</p>
+
+<p class="bodytext">We wandered along through the thick grass, N&#333;f&#363;hl and I, much excited
+over our discoveries and delighted with the strange scene. The
+sunshine is of dazzling brightness, birds are singing everywhere, and
+the ruins are gay with gorgeous wild flowers. We soon found ourselves
+in what was once a public square, now for the most part a shady grove.<a id="NtA_1" href="#Nt_1"><sup>[1]</sup></a>
+
+<span class="rightnote"> <a id="Nt_1" href="#NtA_1">[1]</a> Afterward ascertained to be the square of the City Hall. </span>
+
+</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-12_4s.jpg" alt="Image: &#38;ldquo;We soon found ourselves in what was once a public square.&#38;rdquo;">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "We soon found ourselves in what was once a public square." </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">As we sat on a fallen cornice and gazed on the lofty buildings about
+us I asked N&#333;f&#363;hl if he was still in ignorance as to where we were,
+and he said:</p>
+
+<p class="bodytext">"As yet I know not. The architecture is much like that of ancient
+Europe, but it tells us nothing."</p>
+
+<p class="bodytext">Then I said to him in jest, "Let this teach us, O N&#333;f&#363;hl! the folly of
+excessive wisdom. Who among thy pupils of the Imperial College at
+Ispahan would believe their venerable instructor in history and
+languages could visit the largest city in the world and know so little
+about it!"</p>
+
+<p class="bodytext">"Thy words are wise, my Prince," he answered; "few babes could know
+less."</p>
+
+<p class="bodytext">As we were leaving this grove my eyes fell upon an upturned slab that
+seemed to have a meaning. It was lying at our feet, partly hidden by
+the tall grass, having fallen from the columns that supported it. Upon
+its surface were strange characters in bold relief, as sharp and clear
+as when chiselled ten centuries ago. I pointed it out to N&#333;f&#363;hl, and
+we bent over it with eager eyes.</p>
+
+<p class="bodytext">It was this:</p>
+
+<p class="bodytext center">ASTOR HOUSE</p>
+
+<p class="bodytext">"The inscription is Old English," he said. "'House' signified a
+dwelling, but the word 'Astor' I know not. It was probably the name of
+a deity, and here was his temple."</p>
+
+<p class="bodytext">This was encouraging, and we looked about eagerly for other signs.</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">Our steps soon brought us into another street, and as we walked I
+expressed my surprise at the wonderful preservation of the stone work,
+which looked as though cut but yesterday.</p>
+
+<p class="bodytext">"In such an atmosphere decay is slow," said N&#333;f&#363;hl. "A thousand years
+at least have passed since these houses were occupied. Take yonder
+oak, for instance; the tree itself has been growing for at least a
+hundred years, and we know from the fallen mass beneath it that
+centuries had gone by before its birth was possible."</p>
+
+<p class="bodytext">He stopped speaking, his eyes fixed upon an inscription over a
+doorway, partly hidden by one of the branches of the oak.</p>
+
+<p class="bodytext">Turning suddenly upon me with a look of triumph, he exclaimed:</p>
+
+<p class="bodytext">"It is ours!"</p>
+
+<p class="bodytext">"What is ours?" I asked.</p>
+
+<p class="bodytext">"The knowledge we sought;" and he pointed to the inscription,</p>
+
+<p class="bodytext center">NEW YORK STOCK EXC....</p>
+
+<p class="bodytext">He was tremulous with joy.</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-12_5s.jpg" alt="Image: &#38;ldquo;'The knowledge we sought;' and he pointed to the inscription.&#38;rdquo;">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "'The knowledge we sought;' and he pointed to the
+inscription." </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">"Thou hast heard of Nh&#363;-Yok, O my Prince?"</p>
+
+<p class="bodytext">I answered that I had read of it at school.</p>
+
+<p class="bodytext">"Thou art in it now!" he said. "We are standing on the Western
+Continent. Little wonder we thought our voyage long!"</p>
+
+<p class="bodytext">"And what was Nh&#363;-Yok?" I asked. "I read of it at college, but
+remember little. Was it not the capital of the ancient Mehrikans?"</p>
+
+<p class="bodytext">"Not the capital," he answered, "but their largest city. Its
+population was four millions."</p>
+
+<p class="bodytext">"Four millions!" I exclaimed. "Verily, O Fountain of Wisdom, that is
+many for one city!"</p>
+
+<p class="bodytext">"Such is history, my Prince! Moreover, as thou knowest, it would take
+us many days to walk this town."</p>
+
+<p class="bodytext">"True, it is endless."</p>
+
+<p class="bodytext">He continued thus:</p>
+
+<p class="bodytext">"Strange that a single word can tell so much! Those iron structures,
+the huge statue in the harbor, the temples with pointed towers, all
+are as writ in history."</p>
+
+<p class="bodytext">Whereupon I repeated that I knew little of the Mehrikans save what I
+had learned at college, a perfunctory and fleeting knowledge, as they
+were a people who interested me but little.</p>
+
+<p class="bodytext">"Let us seat ourselves in the shade," said N&#333;f&#363;hl, "and I will tell
+thee of them."</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-12_6s.jpg" alt="Image: In a street of the forgotten city.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> In a Street of the Forgotten City </p>
+
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">We sat.</p>
+
+<p class="bodytext">"For eleven centuries the cities of this sleeping hemisphere have
+decayed in solitude. Their very existence has been forgotten. The
+people who built them have long since passed away, and their
+civilization is but a shadowy tradition. Historians are astounded that
+a nation of an hundred million beings should vanish from the earth
+like a mist, and leave so little behind. But to those familiar with
+their lives and character surprise is impossible. There was nothing to
+leave. The Mehrikans possessed neither literature, art, nor music of
+their own. Everything was borrowed. The very clothes they wore were
+copied with ludicrous precision from the models of other nations. They
+were a sharp, restless, quick-witted, greedy race, given body and soul
+to the gathering of riches. Their chiefest passion was to buy and
+sell. Even women, both of high and low degree, spent much of their
+time at bargains, crowding and jostling each other in vast marts of
+trade, for their attire was complicated, and demanded most of their
+time."</p>
+
+<p class="bodytext">"How degrading!" I exclaimed.</p>
+
+<p class="bodytext">"So it must have been," said N&#333;f&#363;hl; "but they were not without
+virtues. Their domestic life was happy. A man had but one wife, and
+treated her as his equal."</p>
+
+<p class="bodytext">"That is curious! But as I remember, they were a people of elastic
+honor."</p>
+
+<p class="bodytext">"They were so considered," said N&#333;f&#363;hl; "their commercial honor was a
+jest. They were sharper than the Turks. Prosperity was their god, with
+cunning and invention for his prophets. Their restless activity no
+Persian can comprehend. This vast country was alive with noisy
+industries, the nervous Mehrikans darting with inconceivable rapidity
+from one city to another by a system of locomotion we can only guess
+at. There existed roads with iron rods upon them, over which small
+houses on wheels were drawn with such velocity that a long day's
+journey was accomplished in an hour. Enormous ships without sails,
+driven by a mysterious force, bore hundreds of people at a time to the
+furthermost points of the earth."</p>
+
+<p class="bodytext">"And are these things lost?" I asked.</p>
+
+<p class="bodytext">"We know many of the forces," said N&#333;f&#363;hl, "but the knowledge of
+applying them is gone. The very elements seem to have been their
+slaves. Cities were illuminated at night by artificial moons, whose
+radiance eclipsed the moon above. Strange devices were in use by which
+they conversed together when separated by a journey of many days. Some
+of these appliances exist to-day in Persian museums. The superstitions
+of our ancestors allowed their secrets to be lost during those dark
+centuries from which at last we are waking."</p>
+
+<p class="bodytext">At this point we heard the voice of Bhoz-j&#257;-kh&#257;z in the distance; they
+had found a spring and he was calling to us.</p>
+
+<p class="bodytext">Such heat we had never felt, and it grew hotter each hour. Near the
+river where we ate it was more comfortable, but even there the
+perspiration stood upon us in great drops. Our faces shone like
+fishes. It was our wish to explore further, but the streets were like
+ovens, and we returned to the <i>Zl&#333;tuhb</i>.</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">As I sat upon the deck this afternoon recording the events of the
+morning in this journal Bhoz-j&#257;-kh&#257;z and Ad-el-pate approached, asking
+permission to take the small boat and visit the great statue.
+Thereupon N&#333;f&#363;hl informed us that this statue in ancient times held
+aloft a torch illuminating the whole harbor, and he requested
+Ad-el-pate to try and discover how the light was accomplished.</p>
+
+<p class="bodytext">They returned toward evening with this information: that the statue is
+not of solid bronze, but hollow; that they ascended by means of an
+iron stairway into the head of the image, and from the top looked down
+upon us; that Ad-el-pate, in the dark, sat to rest himself upon a nest
+of yellow flies with black stripes; that these flies inserted stings
+into Ad-el-pate's person, causing him to exclaim loudly and descend
+the stairs with unexpected agility; that Bhoz-j&#257;-kh&#257;z and the others
+pushed on through the upraised arm, and stood at last upon the bronze
+torch itself; that the city lay beneath them like a map, covering the
+country for miles away on both sides of the river. As for illuminating
+the harbor, Bhoz-j&#257;-kh&#257;z says N&#333;f&#363;hl is mistaken; there are no
+vestiges of anything that could give a light&#38;mdash;no vessel for oil or
+traces of fire.</p>
+
+<div class="figright">
+  <img src="images/5-12_7s.jpg" alt="Image: Lamp." >
+</div>
+
+<p class="bodytext">N&#333;f&#363;hl says J&#257;-kh&#257;z is an idiot; that he shall go himself.</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-12_8s.jpg" alt="Image: &#38;ldquo;The great statue in the harbor.&#38;rdquo;" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "The great statue in the harbor." </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+<div>
+<br>
+</div>
+
+
+
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-13_1s.jpg" alt="Thirteenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>13th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-13_2s.jpg" alt="A" >
+</div>
+<p class="bodytext"> startling discovery this morning.</p>
+
+<p class="bodytext">By landing higher up the river we explored a part of the city where
+the buildings are of a different character from those we saw
+yesterday. N&#333;f&#363;hl considers them the dwellings of the rich. In shape
+they are like bricks set on end, all very similar, uninteresting, and
+monotonous.</p>
+
+<p class="bodytext">We noticed one where the doors and shutters were still in place, but
+rotting from the fantastic hinges that supported them. A few hard
+blows brought down the outer doors in a dusty heap, and as we stepped
+upon the marble floor within our eyes met an unexpected sight.
+Furniture, statues, dingy pictures in crumbling frames, images in
+bronze and silver, mirrors, curtains, all were there, but in every
+condition of decay. We knocked open the iron shutters and let the
+light into the rooms sealed up for centuries. In the first one lay a
+rug from Persia! Faded, moth-eaten, gone in places, it seemed to ask
+us with dying eyes to be taken hence. My heart grew soft over the
+ancient rug, and I caught a foolish look in Lev-el-Hedyd's eye.</p>
+
+<p class="bodytext">As we climbed the mouldering stair to the floor above I expressed
+surprise that cloth and woodwork should hold together for so many
+centuries, also saying:</p>
+
+<p class="bodytext">"These Mehrikans were not so unworthy as we think them."</p>
+
+<p class="bodytext">"That may be," said Lev-el-Hedyd, "but the Persian rug is far the
+freshest object we have seen, and that perchance was ancient when they
+bought it."</p>
+
+<p class="bodytext">On this floor we entered a dim chamber, spacious and once richly
+furnished. When Lev-el-Hedyd pushed open the shutters and drew aside
+the ragged curtains we started at the sight before us. Upon a wide bed
+in the centre of the room lay a human form, the long,
+yellow hair still clinging to the head. It was more a mummy than a
+skeleton. Around, upon the bed, lay mouldering fragments of the once
+white sheets that covered it. On the fingers of the left hand
+glistened two rings which drew our attention. One held a diamond of
+great price, the other was composed of sapphires and diamonds most
+curiously arranged. We stood a moment in silence, gazing sadly upon
+the figure.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-13_3s.jpg" alt="Image: In the mouldering chamber.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> In the Mouldering Chamber </p>
+
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">"Poor woman," I said, "left thus to die alone."</p>
+
+<p class="bodytext">"It is more probable," said N&#333;f&#363;hl, "she was already dead, and her
+friends, departing perhaps in haste, were unable to burn the body."</p>
+
+<p class="bodytext">"Did they burn their dead?" I asked. "In my history 't was writ they
+buried them in the earth like potatoes, and left them to rot."</p>
+
+<p class="bodytext">And N&#333;f&#363;hl answered: "At one time it was so, but later on, as they
+became more civilized, the custom was abandoned."</p>
+
+<p class="bodytext">"Is it possible?" I asked, "that this woman has been lying here almost
+a thousand years and yet so well preserved?"</p>
+
+<p class="bodytext">"I, also, am surprised," said N&#333;f&#363;hl. "I can only account for it by
+the extreme dryness of the air in absorbing the juices of the body and
+retarding decay."</p>
+
+<p class="bodytext">Then lifting tenderly in his hand some of the yellow hair, he said</p>
+
+<p class="bodytext">"She was probably very young, scarce twenty."</p>
+
+<p class="bodytext">"Were their women fair?" I asked.</p>
+
+<p class="bodytext">"They were beautiful," he answered; "with graceful forms and lovely
+faces; a pleasure to the eye; also were they gay and sprightly with
+much animation."</p>
+
+<p class="bodytext">Thereupon cried Lev-el-Hedyd:</p>
+
+<p class="bodytext">"Here are the first words thou hast uttered, O N&#333;f&#363;hl, that cause me
+to regret the extinction of this people! There is ever a place in my
+heart for a blushing maiden!"</p>
+
+<p class="bodytext">"Then let thy grief be of short life," responded N&#333;f&#363;hl, "for
+Mehrikan damsels were not of that description. Blushing was an art
+they practised little. The shyness thou so lovest in a Persian maiden
+was to them an unknown thing. Our shrinking daughters bear no
+resemblance to these Western products. They strode the public streets
+with roving eyes and unblushing faces, holding free converse with men
+as with women, bold of speech and free of manner, going and coming as
+it pleased them best. They knew much of the world, managed their own
+affairs, and devised their own marriages, often changing their minds
+and marrying another than the betrothed."</p>
+
+<p class="bodytext">"Bismillah! And men could love these things?" exclaimed Lev-el-Hedyd
+with much feeling.</p>
+
+<p class="bodytext">"So it appears."</p>
+
+<p class="bodytext">"But I should say the Mehrikan bride had much the freshness of a dried
+fig."</p>
+
+<p class="bodytext">"So she had," said N&#333;f&#363;hl; "but those who know only the dried fig have
+no regret for the fresh fruit. But the fault was not with the maidens.
+Brought up like boys, with the same studies and mental development,
+the womanly part of their nature gradually vanished as their minds
+expanded. Vigor of intellect was the object of a woman's education."</p>
+
+<p class="bodytext">Then Lev-el-Hedyd exclaimed with great disgust:</p>
+
+<p class="bodytext">"Praises be to Allah for his aid in exterminating such a people!" and
+he walked away from the bed, and began looking about the chamber. In a
+moment he hastened back to us, saying:</p>
+
+<p class="bodytext">"Here are more jewels! also money!"</p>
+
+<p class="bodytext">N&#333;f&#363;hl eagerly took the pieces.</p>
+
+<p class="bodytext">"Money!" he cried. "Money will tell us more than pages of history!"</p>
+
+<p class="bodytext">There were silver coins of different sizes and two small pieces of
+copper. N&#333;f&#363;hl studied them closely.</p>
+
+<p class="bodytext">"The latest date is 1957," he said; "a little less than a thousand
+years ago; but the piece may have been in circulation some years
+before this woman died; also it may have been coined the very year of
+her death. It bears the head of Dennis, the last of the Hy-Burnyan
+dictators. The race is supposed to have become extinct before 1990 of
+their era."</p>
+
+<div class="figleft" style="width:60%;">
+<table class="bwillo">
+ <tr>
+  <td >
+    <img src="images/5-13_4s.jpg" alt="Image: The face and back of one of the silver coins.">
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Face and Back of One of the Silver Coins. </p>
+
+  </td>
+ </tr>
+</table>
+</div>
+
+
+
+<p class="bodytext">I then said:</p>
+
+<p class="bodytext">"Thou hast never told us, O N&#333;f&#363;hl! the cause of their disappearance."</p>
+
+<p class="bodytext">"There were many causes," he answered. "The Mehrikans themselves were
+of English origin, but people from all parts of Europe came here in
+vast numbers. Although the original comers were vigorous and hardy the
+effect of climate upon succeeding generations was fatal. They became
+flat-chested and thin, with scanty hair, fragile teeth, and weak
+digestions. Nervous diseases unknown to us wrought deadly havoc.
+Children were reared with difficulty. Between 1945 and 1960, the last
+census of which any record remains, the population decreased from
+ninety millions to less than twelve millions. Climatic changes, the
+like of which no other land ever experienced, began at that period,
+and finished in less than ten years a work made easy by nervous
+natures and rapid lives. The temperature would skip in a single day
+from burning heat to winter's cold. No constitution could withstand
+it, and this vast continent became once more an empty wilderness."</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<div class="figright">
+  <img src="images/5-13_5s.jpg" alt="Image: Coin with lion imprint." >
+</div>
+
+<p class="bodytext">Much more of the same nature he told us, but I am too sleepy to write
+longer. We explored the rest of the mansion, finding many things of
+interest. I caused several objects to be carried aboard the <i>Zl&#333;tuhb</i>.<a id="NtB_2" href="#Nt_2"><sup>[2]</sup></a>
+
+<span class="rightnote"> <a id="Nt_2" href="#NtB_2">[2]</a> These objects are now in the museum of the Imperial College, at Teheran. </span>
+
+</p>
+
+
+</td></tr>
+</table>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-14_1s.jpg" alt="Fourteenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>14th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-14_2s.jpg" alt="H" >
+</div>
+<p class="bodytext">otter than yesterday.</p>
+
+<p class="bodytext">In the afternoon we were rowed up the river and landed for a short
+walk. It is unsafe to brave the sun.</p>
+
+<p class="bodytext">The more I learn of these Mehrikans the less interesting they become.
+N&#333;f&#363;hl is of much the same mind, judging from our conversation to-day,
+as we walked along together.</p>
+
+<p class="bodytext">It was in this wise:</p>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+
+ </td><td>
+  <p>How alike the houses! How monotonous!</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>So, also, were the occupants. They thought alike, worked alike, ate,
+dressed and conversed alike. They read the same books; they fashioned
+their garments as directed, with no regard for the size or figure of
+the individual, and copied to a stitch the fashions of Europeans.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+
+ </td> <td>
+  <p>But the close-fitting apparel of the European must have been sadly
+uncomfortable in the heat of a Mehrikan summer.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+
+ </td> <td>
+  <p>So probably it was. Stiff boxes of varying patterns adorned the heads
+of men. Curious jackets with tight sleeves compressed the body. The
+feet throbbed and burned in close-fitting casings of unyielding
+leather, and linen made stiff by artificial means was drawn tightly
+about the neck.</p>
+ </td> </tr>
+</table>
+
+<div class="figright">
+  <img src="images/5-14_3s.jpg" alt="Image: Floral decoration." >
+</div>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+
+ </td> <td>
+  <p>Allah! What idiots!</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+
+ </td> <td>
+  <p>Even so are they considered.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+
+ </td> <td>
+  <p>To what quality of their minds do you attribute such love of needless suffering?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+
+ </td> <td>
+  <p>It was their desire to be like others. A natural feeling in a vulgar people.</p>
+ </td> </tr>
+</table>
+
+
+
+</td></tr>
+</table>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-15_1s.jpg" alt="Fifteenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>15th May</i></p>
+
+
+
+
+<div class="figright">
+  <img src="images/5-15_3s.jpg" alt="Image: Decorative pillar." >
+</div>
+
+<div class="figleft">
+  <img src="images/5-15_2s.jpg" alt="A" >
+</div>
+<p class="bodytext"> fair wind from the West to-day.  We weighed anchor and sailed up
+the Eastern side of the city. I did this as N&#333;f&#363;hl finds the upper
+portion of the town much richer in relics than the lower, which seems
+to have been given up to commercial purposes. We sailed close under
+one of the great monuments in the river, and are at a loss to divine
+its meaning. Many iron rods still dangle from the tops of each of the
+structures. As they are in a line, one with the other, we thought at
+first they might have been once connected and served as a bridge, but
+we soon saw they were too far apart.</p>
+
+
+<p class="bodytext">Came to anchor about three miles from the old mooring. Up the river
+and down, North, South, East, and West, the ruins stretch away
+indefinitely, seemingly without end.</p>
+
+<p class="bodytext">Am anxious about Lev-el-Hedyd. He went ashore and has not returned.
+It is now after midnight.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-15_4s.jpg" alt="Image: The two monuments in the river.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Two Monuments in the River </p>
+
+  </td>
+ </tr>
+</table>
+
+</td></tr>
+</table>
+
+<div>
+<br>
+</div>
+
+<div class="figcenter">
+  <img src="images/5-16_1s.jpg" alt="Sixteenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>16th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-16_2s.jpg" alt="P" >
+</div>
+<p class="bodytext">raise Allah! my dear comrade is alive! This morning we landed early
+and began our search for him. As we passed before the building which
+bears the inscription</p>
+
+<p class="bodytext center">. . . DORF ASTORIA</p>
+
+<p class="bodytext">upon its front, we heard his voice from within in answer to our calls.
+We entered, and after climbing the ruined stairway found him seated
+upon the floor above. He had a swollen leg from an ugly sprain, and
+various bruises were also his. While our friends were constructing a
+litter on which to bear him hence we conversed together. The walls
+about us bore traces of having once enclosed a hall of some beauty. In
+idling about I pulled open the decaying door of an old closet and saw
+upon the rotting shelves many pieces of glass and earthenware of fine
+workmanship. Taking one in my hand, a small wine-cup of glass, I
+approached my comrade calling his attention to its slender stem and
+curious form. As his eyes fell upon it they opened wide in amazement.
+I also observed a trembling of his hand as he reached forth to touch
+it. He then recounted to me his marvellous adventure of the night
+before, but saying before he began:</p>
+
+<p class="bodytext">"Thou knowest, O Prince, I am no believer in visions, and I should
+never tell the tale but for thy discovery of this cup. I drank from
+such an one last night, proffered by a ghostly hand."</p>
+
+<div class="figleft">
+ <img src="images/5-16_3s.jpg" alt="Image: Wineglass.">
+</div>
+
+<p class="bodytext">I would have smiled, but he was much in earnest. As I made a movement
+to sit beside him, he said:</p>
+
+<p class="bodytext">"Taste first, O my master, of the grapes hanging from yonder wall."</p>
+
+<p class="bodytext">I did so, and to my great surprise found them of an exquisite flavor,
+finer even than the cultivated fruit of Persia, sweeter and more
+delicate, of a different nature from the wild grapes we have been
+eating. My astonishment appeared to delight him, and he said with a
+laugh:</p>
+
+<p class="bodytext">"The grapes are impossible, but they exist; even more absurd is my
+story!" and he then narrated his adventure.</p>
+
+<p class="bodytext">It was this:</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext center">WHAT LEV-EL-HEDYD SAW.</p>
+
+<p class="bodytext">Yesterday, after nightfall, as he was hastening toward the <i>Zl&#333;tuhb</i> he
+fell violently upon some blocks of stone, wrenching his ankle and much
+bruising himself. Unable to walk upon his foot he limped into this
+building to await our coming in the morning. The howling of wolves and
+other wild beasts as they prowled about the city drove him, for
+safety, to crawl up the ruins of the stairway to the floor above. As
+he settled himself in a corner of this hall his nostrils were greeted
+with the delicious odor from the grapes about his head. He found them
+surprisingly good, and ate heartily. He soon after fell into a sleep
+which lasted some hours, for when he awoke the moon was higher in the
+heavens, the voices of the wolves were hushed and the city was silent.</p>
+
+<p class="bodytext">As he lay in a revery, much absorbed in his own thoughts, he gradually
+became aware of mysterious changes taking place, as if by stealth,
+about him. A decorated ceiling appeared to be closing over the hall.
+Mirrors and tinted walls slowly crept in place of ivy and crumbling
+bricks. A faint glow grew stronger and more intense until it filled
+the great room with a dazzling light.</p>
+
+<p class="bodytext">Then came softly into view a table of curious form, set out with flowers
+and innumerable dishes of glass and porcelain, as for a feast.</p>
+
+<p class="bodytext">Standing about the room he saw solemn men with beardless faces, all in
+black attire, whose garments bore triangular openings upon the chest
+to show the shirt beneath. These personages he soon discovered were
+servants.</p>
+
+<p class="bodytext">As he gazed in bewilderment, there entered other figures, two by two,
+who took their seats about the table. These later comers, sixty or
+more, were men and women walking arm in arm, the women in rich attire
+of unfamiliar fashion and sparkling with precious stones. The men were
+clad like the servants.</p>
+
+<p class="bodytext">They ate and drank and laughed, and formed a brilliant scene.
+Lev-el-Hedyd rose to his feet, and moved by a curiosity he made no
+effort to resist,&#38;mdash;for he is a reckless fellow and knows no fear&#38;mdash;he
+hobbled out into the room.</p>
+
+<p class="bodytext">They looked upon him in surprise, and seemed much amused at his
+presence. One of the guests, a tall youth with yellow mustaches,
+approached him, offering a delicate crystal vessel filled with a
+sparkling fluid.</p>
+
+<p class="bodytext">Lev-el-Hedyd took it.</p>
+
+<p class="bodytext">The youth raised another from the table and with a slight gesture as
+if in salutation, he said in words which my comrade understood, though
+he swears it was a language unknown to him,</p>
+
+<p class="bodytext">"We may meet again the fourth of next month."</p>
+
+<p class="bodytext">He then drank the wine, and so did Lev-el-Hedyd.</p>
+
+<p class="bodytext">Hereupon the others smiled as if at their comrade's wit, all save the
+women, whose tender faces spoke more of pity than of mirth. The wine
+flew to his brain as he drank it, and things about him seemed to reel
+and spin. Strains of fantastic music burst upon his ears: then, all in
+rhythm, the women joined their partners and whirled about him with a
+lightsome step. And, moving with it, his throbbing brain seemed
+dancing from his head. The room itself, all swaying and quivering
+with the melody, grew dim and stole from view. The music softly died
+away.</p>
+
+<p class="bodytext">Again was silence, the moon above looking calmly down upon the ivied
+walls.</p>
+
+<p class="bodytext">He fell like a drunken man upon the floor, and did not wake till our
+voices called him.</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">Such his tale.</p>
+
+<p class="bodytext">He has a clear head and is no liar, but so many grapes upon an empty
+stomach with the fever from his swollen limb might well explain it.</p>
+
+<p class="bodytext center">*   *   *   *   *</p>
+
+<div class="figright">
+  <img src="images/5-16_4s.jpg" alt="Image: Animal decoration." >
+</div>
+
+<p class="bodytext">Bear's meat for dinner.</p>
+
+<p class="bodytext">This morning toward noon Kuzundam, the second officer, wandered on
+ahead of us, and entered a large building in pursuit of a rabbit. He
+was about descending to the basement below, when he saw, close before
+him, a bear leisurely mounting the marble stairs. Kuzundam is no
+coward, but he turned and ran as he never ran before. The bear, who
+seemed of a sportive nature, also ran, and in close pursuit. Luckily
+for my friend we happened to be near, otherwise instead of our eating
+bear's meat, the bear might have lunched quietly off Kuzundam in the
+shady corridors of the <span class="sc">"Fifthavenuehotel."</span></p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-16_5s.jpg" alt="Image: Kuzundam's narrow escape.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> Kuzundam's Narrow Escape </p>
+
+  </td>
+ </tr>
+</table>
+
+<div>
+<br>
+</div>
+
+
+
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-17_1s.jpg" alt="Seventeenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>17th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-17_2s.jpg" alt="T" >
+</div>
+<p class="bodytext">o-day a scorching heat that burns the lungs. We started in the
+morning prepared to spend the night ashore, and explore the northern
+end of the city. It was a pleasant walk through the soft grass of the
+shady streets, but in those places unsheltered from the sun we were as
+fish upon a frying-pan. Other dwellings we saw, even larger and more
+imposing than the one we entered yesterday. We were tempted to explore
+them, but Lev-el-Hedyd wisely dissuaded us, saying the day was waxing
+hotter each hour and it could be done on our return.</p>
+
+<p class="bodytext">In the northern part of the town are many religious temples, with
+their tall towers like slender pyramids, tapering to a point. They are
+curious things, and surprisingly well preserved. The interiors of
+these temples are uninteresting. N&#333;f&#363;hl says the religious rites of
+the Mehrikans were devoid of character. There were many religious
+beliefs, all complicated and insignificant variations one from
+another, each sect having its own temples and refusing to believe as
+the others. This is amusing to a Persian, but mayhap was a serious
+matter with them. One day in each week they assembled, the priests
+reading long moral lectures written by themselves, with music by hired
+singers. They then separated, taking no thought of temple or priest
+for another seven days. N&#333;f&#363;hl says they were not a religious people.
+That the temples were filled mostly with women.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-17_3s.jpg" alt="Image: In one of the temples.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> In One of the Temples </p>
+
+  </td>
+ </tr>
+</table>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">In the afternoon we found it necessary to traverse a vast
+pleasure-ground, now a wild forest, but with traces still visible of
+broad promenades and winding drive-ways.<a id="NtC_3" href="#Nt_3"><sup>[3]</sup></a>
+
+<span class="rightnote"> <a id="Nt_3" href="#NtC_3">[3]</a> Olbaldeh thinks this must be the Centralpahk sometimes alluded to in Mehrikan literature. </span>
+
+There
+remains an avenue of bronze statues, most of them yet upright and in
+good condition, but very comic. Lev-el-Hedyd and I still think them
+caricatures, but N&#333;f&#363;hl is positive they were serious efforts, and
+says the Mehrikans were easily pleased in matters of art.</p>
+
+<p class="bodytext">We lost our way in this park, having nothing to guide us as in the
+streets of the city. This was most happy, as otherwise we should have
+missed a surprising discovery.</p>
+
+<p class="bodytext">It occurred in this wise.</p>
+
+<p class="bodytext">Being somewhat overcome by the heat we halted upon a little hill to
+rest ourselves. While reclining beneath the trees I noticed unusual
+carvings upon a huge block against which Lev-el-Hedyd was supporting
+his back. They were unlike any we had seen, and yet they were not
+unfamiliar. As I lay there gazing idly at them it flashed upon me they
+were Egyptian. We at once fell to examining the block, and found to
+our amazement an obelisk of Egyptian granite, covered with Egyptian
+hieroglyphics of an antiquity exceeding by thousands of years the most
+ancient monuments of the country!</p>
+
+<p class="bodytext">Verily, we were puzzled!</p>
+
+<p class="bodytext">"When did the Egyptians invade Mehrika?" quoth Bhoz-j&#257;-kh&#257;z, with a
+solemn look, as if trying to recall a date.</p>
+
+<p class="bodytext">"No Egyptian ever heard of Mehrika," said N&#333;f&#363;hl. "This obelisk was
+finished twenty centuries before the first Mehrikan was weaned. In all
+probability it was brought here as a curiosity, just as we take to
+Persia the bronze head of George-wash-yn-tun."</p>
+
+<p class="bodytext">We spent much time over the monument, and I think N&#333;f&#363;hl was
+disappointed that he could not bring it away with him. </p>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">Also while in this park we came to a high tower, standing by itself, and climbed to the top, where we enjoyed a wide-spreading view.</p>
+
+<p class="bodytext">The extent of the city is astounding.</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-17_4s.jpg" alt="Image: &#38;ldquo;Miles away in the river lay the Zlotuhb, a white speck on the water.&#38;rdquo;" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "Miles away in the river lay the <i>Zlotuhb</i>, a white speck on the water." </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">Miles away in the river lay the <i>Zl&#333;tuhb</i>, a white speck on the water.
+All about us in every direction as far as sight can reach were ruins,
+and ruins, and ruins. Never was a more melancholy sight. The blue sky,
+the bright sunshine, the sweet-scented air with the gay flowers and
+singing birds only made it sadder. They seemed a mockery.</p>
+
+<div class="figright">
+  <img src="images/5-17_5s.jpg" alt="Image: Mosquitos." >
+</div>
+
+<p class="bodytext">We have encamped for the night, and I can write no more. Countless
+flying insects gather about us with a hateful buzz, and bite us beyond
+endurance. They are a pest thrice accursed.</p>
+
+<p class="bodytext">I tell N&#333;f&#363;hl his fine theory concerning the extinction of the Yahnkis
+is a good tale for those who have never been here.</p>
+
+<p class="bodytext">No man without a leather skin could survive a second night.</p>
+
+
+</td></tr>
+</table>
+
+<div class="figcenter">
+  <img src="images/5-18_1s.jpg" alt="Eighteenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>18th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-18_2s.jpg" alt="P" >
+</div>
+<p class="bodytext">oor J&#257;-kh&#257;z is worse than sick.</p>
+
+<p class="bodytext">He had an encounter last night with a strange animal, and his defeat
+was ignoble. The animal, a pretty thing, much like a kitten, was
+hovering near when J&#257;-kh&#257;z, with rare courage and agility, threw
+himself upon it.</p>
+
+<p class="bodytext">And then what happened none of us can state with precision. We know we
+held our noses and fled. And J&#257;-kh&#257;z! No words can fit him. He carries
+with him an odor to devastate a province. We had to leave him ashore
+and send him fresh raiment.</p>
+
+<p class="bodytext">This is, verily, a land of surprises.</p>
+
+<p class="bodytext">Our hands and faces still smart from the biting insects, and the perfume
+of the odorous kitten promises to be ever with us.</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<div class="figright">
+  <img src="images/5-18_3s.jpg" alt="Image: Flower." >
+</div>
+
+<p class="bodytext">N&#333;f&#363;hl is happy. We have discovered hundreds of metal blocks, the
+poorest of which he asserts would be the gem of a museum. They were
+found by Fattan-la&#38;iuml;z-eh in the basement of a high building, all laid
+carefully away upon iron shelves. The flood of light they throw upon
+the manners and customs of this ludicrous people renders them of
+priceless value to historians.</p>
+
+<p class="bodytext">I harbor a suspicion that it causes N&#333;f&#363;hl some pleasure to sit upon
+the cool deck of the <i>Zl&#333;tuhb</i> and watch Bhoz-j&#257;-kh&#257;z walking to and fro upon the ruins of a distant wharf.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/5-18_4s.jpg" alt="Image: A street scene in ancient Nhu-Yok.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> A Street Scene in Ancient Nhu-Yok </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="normaltx" style="text-align:center;"> [The costumes and manner of riding are taken from metal plates now in the museum at Teheran] </p>
+
+  </td>
+ </tr>
+</table>
+
+
+
+
+<div>
+<br>
+</div>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-19_1s.jpg" alt="Nineteenth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>19th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-19_2s.jpg" alt="T" >
+</div>
+<p class="bodytext">he air is cooler. Grip-til-lah thinks a storm is brewing.</p>
+
+<p class="bodytext">Even N&#333;f&#363;hl is puzzled over the wooden image we brought aboard
+yesterday. It is well preserved, with the barbaric coloring still
+fresh upon it. They found it standing upright in a little shop.</p>
+
+<p class="bodytext">How these idols were worshipped, and why they are found in little
+shops and never in the great temples is a mystery. It has a diadem of
+feathers on the head, and as we sat smoking upon the deck this evening
+I remarked to N&#333;f&#363;hl that it might be the portrait of some Mehrikan
+noble. Whereupon he said they had no nobles. </p>
+
+<p class="bodytext">"But the Mehrikans of gentle blood," I asked, "had they no titles?"</p>
+
+<div class="figleft" style="width:35%;">
+<table class="bwillo">
+ <tr>
+  <td >
+   <img src="images/5-19_3s.jpg" alt="Image: The wooden god.">
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Wooden God. </p>
+
+  </td>
+ </tr>
+</table>
+</div>
+
+<p class="bodytext">"Neither titles nor gentle blood," he answered.  "And as they were
+all of much the same origin, and came to this country simply to thrive
+more fatly than at home, there was nothing except difference in wealth
+on which to establish a superior order. Being deep respecters of money
+this was a satisfying distinction. It soon resulted that those
+families who possessed riches for a generation or two became the
+substitute for an aristocracy. This upper class was given to sports
+and pastimes, spending their wealth freely, being prodigiously fond of
+display. Their intellectual development was feeble, and they wielded
+but little influence save in social matters. They followed closely the
+fashions of foreign aristocracies. Great attentions were paid to
+wandering nobles from other lands. Even distant relatives of titled
+people were greeted with the warmest enthusiasm."</p>
+
+<p class="bodytext">Then I said to him, "But explain to me, O N&#333;f&#363;hl, how it was possible
+for so shallow a nation to become so great."</p>
+
+<p class="bodytext">"They were great only in numbers and too weak to endure success. At
+the beginning of the twentieth century&#38;mdash;as they counted time&#38;mdash;huge
+fortunes were amassed in a day, and the Mehrikans became drunk with
+money."</p>
+
+<p class="bodytext">Whereupon I exclaimed, "O Land of Delight! For much money is
+cheering."</p>
+
+<p class="bodytext">But the old man shook his head. "Very true, O Prince; but the effect
+was woful. These vast fortunes soon dominated all things, even the
+seat of government and the courts of Justice. Tricks of finance
+brought fabulous gains. Young men became demoralized. For sober
+industry with its moderate profits was ridiculed."</p>
+
+<div class="figright">
+  <img src="images/5-19_4s.jpg" alt="Image: Stylized flower." >
+</div>
+
+<p class="bodytext">"Verily, that would be natural!" I said. "But in a land where all
+were rich who was found to cook and scrub, to fetch and carry and to
+till the soil? For none will shovel earth when his pockets are
+stuffed with gold."</p>
+
+<p class="bodytext">"All were not rich. And when the poor also became greedy they became
+hostile. Then began social upheavals with bloodshed and havoc."</p>
+
+</td></tr>
+</table>
+
+<div>
+<br>
+</div>
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-20_1s.jpg" alt="Twentieth May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>20th May</i></p>
+
+<div class="figleft">
+  <img src="images/5-20_2s.jpg" alt="A" >
+</div>
+<p class="bodytext">n icy wind from the northeast with a violent rain. Yesterday we
+gasped with the hot air. To-day we are shivering in winter clothing.</p>
+
+<div class="figright">
+  <img src="images/5-20_3s.jpg" alt="Image: Cloud with raindrops." >
+</div>
+
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/5-21_1s.jpg" alt="Tewenty-first May.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>21st May</i></p>
+
+<div class="figleft">
+  <img src="images/5-21_2s.jpg" alt="T" >
+</div>
+<p class="bodytext">he same as yesterday. Most of us are ill. My teeth chatter and my
+body is both hot and cold. A storm more wicked never wailed about a
+ship. Lev-el-Hedyd calls it the shrieking voices of the hundred
+millions of Mehrikans who must have perished in similar weather.</p>
+
+<div class="figright">
+  <img src="images/5-21_3s.jpg" alt="Image: Sun." >
+</div>
+
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/6-16_1s.jpg" alt="Sixteenth June.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>16th June</i></p>
+
+<div class="figleft">
+  <img src="images/6-16_2s.jpg" alt="I" >
+</div>
+<p class="bodytext">t is many days since I have touched this journal. A hateful sickness
+has been upon me, destroying all energy and courage. A sort of fever,
+and yet my limbs were cold. I could not describe it if I would.</p>
+
+<p class="bodytext">N&#333;f&#363;hl came into the cabin this evening with some of his metal plates
+and discoursed upon them. He has no respect for the intellects of the
+early Mehrikans. I thought for a moment I had caught him in a
+contradiction, but he was right as usual. It was thus:</p>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+
+ </td> <td>
+  <p>They were great readers.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+
+ </td> <td>
+  <p>You have told us they had no literature. Were they great readers of nothing?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+
+ </td> <td>
+  <p>Verily, thou hast said it! Vast sheets of paper were published daily
+in which all crimes were recorded in detail. The more revolting the
+deed, the more minute the description. Horrors were their chief
+delight. Scandals were drunk in with thirstful eyes. These chronicles
+of crime and filth were issued by hundreds of thousands. There was
+hardly a family in the land but had one.</p>
+ </td> </tr>
+</table>
+
+<div class="figright">
+  <img src="images/6-16_3s.jpg" alt="Image: Persian hat." >
+</div>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+
+ </td> <td>
+  <p>And did this take the place of literature?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+
+ </td> <td>
+  <p>Even so.</p>
+ </td> </tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/6-20_1s.jpg" alt="Twentieth June.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>20th June</i></p>
+
+<div class="figleft">
+  <img src="images/6-20_2s.jpg" alt="O" >
+</div>
+<p class="bodytext">nce more we are on the sea; two days from Nh&#363;-Yok. Our decision was
+a sudden one. N&#333;f&#363;hl, in an evil moment, found among those accursed
+plates a map of the country, and thereupon was seized with an
+unreasoning desire to visit a town called "Washington." I wavered and
+at last consented, foolishly I believe, for the crew are loud for
+Persia. And this town is inland on a river. He says it was their
+finest city, the seat of Government, the capital of the country.
+Grip-til-lah swears he can find it if the map is truthful.</p>
+
+<p class="bodytext">J&#257;-kh&#257;z still eats by himself.</p>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">This afternoon we reclined upon the deck, the <i>Zl&#333;tuhb</i> drifting gently
+in a southerly direction. Land could be seen on the starboard bow, a
+faint strip along the western horizon.</p>
+
+<p class="bodytext">It was about the middle of the afternoon, while passing the ruins of a
+gigantic tower&#38;mdash;perhaps a lighthouse&#38;mdash;that N&#333;f&#363;hl, of a sudden,
+clambered hastily to his feet and looked about him. Then he called to
+Grip-til-lah, asking how many leagues we were from the harbor of
+Nh&#363;-Yok. Grip-til-lah's reply I forget, but it filled the old man with
+a gentle excitement. I observed an unwonted sparkle in his eyes, also
+a quivering of the fingers as he pointed to the ocean around about,
+and exclaimed&#38;mdash;</p>
+
+<p class="bodytext">"Beneath us, the bottom of the sea is covered with iron ships&#38;mdash;the
+wrecks of stupendous navies&#38;mdash;the mightiest of all human history!"</p>
+
+<p class="bodytext">At once we all became interested.</p>
+
+<p class="bodytext">"What navies?" I inquired. "And what compassed their destruction?
+Was it a battle?"</p>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>A battle of whose magnitude no Persian has conception; a conflict in
+which the sea was tossed and the heavens rent by thunderings of iron
+monsters. Any one of them would have blown to atoms a fleet of
+<i>Zl&#333;tuhbs</i>.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Ad-el-pate</i>.&nbsp; </p>
+ </td>  <td>
+  <p>Verily! A tale easier told than believed. But I would readily
+venture my head in the <i>Zl&#333;tuhb</i> against any of these nursery-tale
+wonders.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td>  <td>
+  <p>And with wisdom. For the loss of thy brain, Ad-el-pate, could not
+affect the nature of thy speech.</p>
+ </td> </tr>
+</table>
+
+<p class="bodytext">Whereupon there was laughter, and Ad-el-pate held his peace.</p>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+ </td> <td>
+  <p>But tell us of this battle, O N&#333;f&#363;hl. I remember now to have read
+about it at college. These details of ancient history I am prone to
+forget. How came it about?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>I have spoken of the Mehrikans being a greedy race. And their greed,
+at last, resulted in this war. By means of one-sided laws of their
+own making they secured for themselves a lion's share of all profits
+from the world's commerce. This checked the prosperity of other
+nations, until at last the leading powers of Europe combined in
+self-defence against this all-absorbing greed. They collected an
+armada the like of which was never imagined, neither before nor since.
+Then, across the ocean, came the iron host. And here, upon this very
+spot where we are floating, they met the Mehrikan ships.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+ </td> <td>
+  <p>How many ships in all?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>The Mehrikans had eighty heavy ships of iron, with a number of smaller
+craft. The allies had two hundred and forty heavy battleships, all of
+iron. They also had smaller craft for divers purposes.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+ </td> <td>
+  <p>Allah! A bad prospect for our greedy friends! And being a nation of
+traders they had no liking, probably, for the perils of war.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>As to that historians differ. According to the Mehrikans themselves
+they were mighty warriors. But certain writers of that period give a
+different impression. N&#333;z-yt-ahl is sure they were cowards, weak in
+body as in spirit, but often favored by fortune. In my opinion, this
+battle throws considerable light upon that matter.</p>
+  <p>A day like this, it was, also in June, as the Europeans, coming
+northward along the coast to seize Nh&#363;-Yok, met the Mehrikan Admiral
+Nev-r-sai-di with his eighty ships. And the struggle was short.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+ </td> <td>
+  <p>Verily, I can believe it! With three ships to one I would give the
+Europeans about half a day&#38;mdash;a summer afternoon like this&#38;mdash;to send
+the greedy ones to the bottom.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>Thy guess is good, O Prince, as to the hours of fighting. It lasted
+just one summer afternoon. But the Mehrikans it was who sent their
+enemies to the bottom. And the sea beneath our feet is strewn with
+iron hulks.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+ </td> <td>
+  <p>Bismillah! If that be a true tale&#38;mdash;and I doubt it not&#38;mdash;these
+greedy ones were not so contemptible, at least when there was profit
+in it.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Lev-el-Hedyd</i>.&nbsp; </p>
+ </td> <td>
+  <p>At what period did this occur?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>Early in the twentieth century. I cannot recall the date, but it was
+never forgotten by the Mehrikans. Surely a just pride, for on that day
+they accomplished wonders. The Admiral Nev-r-sai-di on his ship the
+<i>Ztazenztrypes</i> was at one time surrounded by a dozen German men-of-
+war. And lo! he demolished all! And of Frank and Russyan vessels he
+put an end to as many more; also sundry Talyans and British.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Lev-el-Hedyd</i>.&nbsp; </p>
+ </td> <td>
+  <p>Bismillah! But that was good! What, O N&#333;f&#363;hl, is the Persian of that
+name <i>Ztazenztrypes</i>?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>None can tell with certainty. To the Mehrikans it signified victory,
+or something similar.</p>
+  <p>Other miracles were achieved by the Mehrikans that day. <i>N&#333;fli-zon-mee</i>,
+a little craft with a pointed prow, jammed holes in nearly a score of
+monster ships, and the waters closed over them. There figured also a
+long and narrow boat of Mehrikan devising, the <i>Yankyd-Oodl</i>. This
+astonishing machine sailed to and fro among the foreign ships
+upsetting all traditions. Much glory befell her commander, the Captain
+Hoorai-boiz.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Grip-til-lah</i>.&nbsp; </p>
+ </td> <td>
+  <p>And how many ships did the Mehrikans lose?</p>
+ </td> </tr>
+</table>
+
+<div class="figright">
+  <img src="images/6-20_3s.jpg" alt="Image: Persian with tablet." >
+</div>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>Reports are contradictory. According to one of their own writers of
+the period they suffered no loss whatever in vessels. Yet at the same
+time he asserts, "We gave them Haleklumbya," which must be the name of
+a ship.</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>Khan-li</i>.&nbsp; </p>
+ </td> <td>
+  <p>A gallant fight! But can you explain how such an inferior people
+could become heroic of a sudden?</p>
+ </td> </tr>
+</table>
+
+<table class="nob bodytext">
+ <tr> <td class="stagedir">
+  <p><i>N&#333;f&#363;hl</i>.&nbsp; &nbsp; </p>
+ </td> <td>
+  <p>According' to 'Ardfax, an early British historian, they were addicted
+to surprising feats upon the water. And this statement is borne out by
+a Spanish admiral, Offulbad-shoota, who maintains that the Mehrikans,
+being a godless people, were aided by the devil.</p>
+ </td> </tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/7-02_1s.jpg" alt="Second July.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>2nd July</i></p>
+
+<div class="figright">
+  <img src="images/7-02_3s.jpg" alt="Image: Decorative pillar." >
+</div>
+
+<div class="figleft">
+  <img src="images/7-02_2s.jpg" alt="W" >
+</div>
+<p class="bodytext">e are on the river that leads to "Washington." Grip-til-lah says we
+shall sight it to-morrow. The river is a dirty color.</p>
+
+</td></tr>
+</table>
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/7-03_1s.jpg" alt="Third July." >
+<br>
+</div>
+
+
+
+<p class="jdate"><i>3rd July</i></p>
+
+<div class="figright" >
+  <img src="images/7-03_3s.jpg" alt="Image: Decorative flag." >
+</div>
+
+<div class="figleft">
+  <img src="images/7-03_2s.jpg" alt="W" >
+</div>
+<p class="bodytext">e see ahead of us the ruins of a great dome, also a very high shaft.
+Probably they belong to the city we seek.</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/7-03_4s.jpg" alt="Image: &#38;ldquo;We see ahead of us the ruins of a great dome, also a very high shaft.&#38;rdquo;" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "We see ahead of us the ruins of a great dome, also a very high shaft."</p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+</td></tr>
+</table>
+
+<div>
+<br>
+</div>
+
+<div class="figcenter">
+  <img src="images/7-04_1s.jpg" alt="Fourth July.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>4th July</i></p>
+
+<div class="figleft">
+  <img src="images/7-04_2s.jpg" alt="A" >
+</div>
+<p class="bodytext"> date we shall not forget!</p>
+
+<p class="bodytext">Little did I realize this morning when we left the <i>Zl&#333;tuhb</i> in such
+hilarious mood what dire events awaited us. I landed about noon,
+accompanied by N&#333;f&#363;hl, Lev-el-Hedyd, Bhoz-j&#257;-kh&#257;z, Ad-el-pate,
+Kuzundam the first mate, Tik'l-palyt the cook, Fattan-la&#38;iuml;z-eh, and
+two sailors. Our march had scarce begun when a startling discovery
+caused great commotion in our minds. We had halted at N&#333;f&#363;hl's
+request, to decipher the inscription upon a stone, when Lev-el-Hedyd,
+who had started on, stopped short with a sudden exclamation. We
+hastened to him, and there, in the soft earth, was the imprint of
+human feet!</p>
+
+<div class="figright" style="width:50%;">
+<table class="bwillo">
+ <tr>
+  <td >
+    <img src="images/7-04_3s.jpg" alt="Image: Through the streets of &#38;ldquo;Washington.&#38;rdquo;">
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> Through the Streets of "Washington." </p>
+
+  </td>
+ </tr>
+</table>
+</div>
+
+<p class="bodytext">I cannot describe our surprise. We decided to follow the footprints,
+and soon found they were leading us toward the great dome more
+directly than we could have gone ourselves. Our excitement was beyond
+words. Those of us who had weapons carried them in readiness. The path
+was little used, but clearly marked. It wound about among fallen
+fragments and crumbling statues, and took us along a wide avenue
+between buildings of vast size and solidity, far superior to any we
+had seen in Nh&#363;-Yok. It seemed a city of monuments.</p>
+
+
+<p class="bodytext">As we ascended the hill to the great temple and saw it through the
+trees rising high above us, we were much impressed by its vast size
+and beauty. Our eyes wandered in admiration over the massive columns,
+each hewn from a single block, still white and fresh as if newly
+quarried. The path took us under one of the lower arches of the
+building, and we emerged upon the other side. This front we found even
+more beautiful than the one facing the city. At the centre was a
+flight of steps of magnificent proportions, now falling asunder and
+overgrown in many places with grass and flowers.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/7-04_5s.jpg" alt="Image: The ruins of the great temple.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Ruins of the Great Temple </p>
+
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">These steps we ascended. As I climbed silently up, the others
+following, I saw two human feet, the soles toward us, resting upon the
+balustrade above. With a gesture I directed N&#333;f&#363;hl's attention to
+them, and the old man's eyes twinkled with delight. Was it a Mehrikan?
+I confess to a lively excitement at the prospect of meeting one. How
+many were they? and how would they treat us?</p>
+
+<div class="figleft" style="width:60%;">
+<table class="bwillo">
+ <tr>
+  <td >
+    <img src="images/7-04_6s.jpg" alt="Image: The feet upon the portico.">
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Feet upon the Portico. </p>
+
+  </td>
+ </tr>
+</table>
+</div>
+
+<p class="bodytext">Looking down upon my little band to see that all were there, I boldly
+marched up the remaining steps and stood before him.</p>
+
+<p class="bodytext">He was reclining upon a curious little four-legged seat, with his feet
+upon the balustrade, about on a level with his head. Clad in skins and
+rough cloth he looked much like a hunter, and he gazed quietly upon
+me, as though a Persian noble were a daily guest. Such a reception was
+not gratifying, especially as he remained in the same position, not
+even withdrawing his feet. He nodded his curious head down once and up
+again, deeming it apparently a sufficient salutation.</p>
+
+<p class="bodytext">
+The maintenance of my own dignity before my followers forbade my
+standing thus before a seated barbarian, and I made a gesture for him
+to rise. This he answered in an unseemly manner by ejecting from his
+mouth a brownish fluid, projecting it over and beyond the balustrade
+in front of him. Then looking upon me as if about to laugh, and yet
+with a grave face, he uttered something in an unmusical voice which I
+failed to understand.</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <br>
+    <img src="images/7-04_4s.jpg" alt="Image: &#38;ldquo;He remained in the same position, not even withdrawing his feet.&#38;rdquo;" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "He remained in the same position, not even withdrawing his feet." </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+
+<p class="bodytext">Upon this N&#333;f&#363;hl, who had caught the meaning of one or two words,
+stepped hastily forward and addressed him in his own language. But the
+barbarian understood with difficulty and they had much trouble in
+conversing, chiefly from reason of N&#333;f&#363;hl's pronunciation. He
+afterward told me that this man's language differed but little from
+that of the Mehrikans, as they wrote it eleven centuries ago.</p>
+
+<div class="figleft" style="width:18%;">
+<table class="bwillo">
+ <tr>
+  <td >
+    <img src="images/7-04_7s.jpg" alt="Image: The man.">
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Man. </p>
+
+  </td>
+ </tr>
+</table>
+</div>
+
+<p class="bodytext">When he finally arose in talking with N&#333;f&#363;hl I could better observe
+him. He was tall and bony, with an awkward neck, and appeared at first
+glance to be a man of forty years. We decided later he was under
+thirty. His yellow skin and want of hair made him seem much older than
+he was. I was also much puzzled by the expression of his face. It was
+one of deep sadness, yet his eyes were full of mirth, and a corner of
+his mouth was ever drawing up as if in mockery. For myself I liked not
+his manner. He appeared little impressed by so many strangers, and
+bore himself as though it were of small importance whether we
+understood him or not. But N&#333;f&#363;hl since informed me that he asked a
+multitude of questions concerning us.</p>
+
+<p class="bodytext">What N&#333;f&#363;hl gathered was this:</p>
+
+<p class="bodytext">This Mehrikan with his wife and one old man were all that remained of
+his race. Thirty-one had died this summer. In ancient times there were
+many millions of his country-men. They were the greatest nation upon
+the earth. He could not read. He had two names, one was "Jon," the
+other he had forgotten. They lived in this temple because it was cool.
+When the temple was built, and for what purpose, he could not tell. He
+pointed to the West and said the country in that direction was
+covered with ruined cities.</p>
+
+<p class="bodytext">When N&#333;f&#363;hl told him we were friends, and presented him at my
+direction with a hunting-knife of fine workmanship, he pushed out his
+right arm toward me and held it there. For an instant N&#333;f&#363;hl looked at
+the arm wonderingly, as did we all, then with sudden intelligence he
+seized the outstretched hand in his own, and moved it up and down.
+This was interesting, for N&#333;f&#363;hl tells me it was a form of greeting
+among the ancient Mehrikans.</p>
+
+<p class="bodytext">While all this was going on we had moved into the great circular hall
+beneath the dome. This hall was of vast proportions, and there were
+still traces of its former splendor. Against the walls were marble
+statues entwined in ivy, looking down upon us with melancholy eyes.
+Here also we met a thin old man, whose hairless head and beardless
+face almost moved us to mirth.</p>
+
+<p class="bodytext">At N&#333;f&#363;hl's request our host led the way into some of the smaller
+rooms to show us their manner of living, and it would be impossible to
+imagine a more pathetic mixture of glory and decay, of wealth and
+poverty, of civilization and barbarity. Old furniture, dishes of
+silver, bronze images, even paintings and ornaments of great value
+were scattered through the rooms, side by side with the most primitive
+implements. It was plain the ancient arts were long since forgotten.</p>
+
+<p class="bodytext">When we returned to the circular hall our host disappeared for a few
+moments into a room which he had not shown us. He came back bringing a
+stone vase with a narrow neck, and was followed by a maiden who bore
+drinking-cups of copper and tin. These she deposited upon a fallen
+fragment of the dome which served as a table.</p>
+
+<p class="bodytext">This girl was interesting. A dainty head, delicate features, yellow
+hair, blue eyes, and a gentle sadness of mien that touched my heart.
+Had she been ugly what a different ending to this day!</p>
+
+<p class="bodytext">We all saluted her, and the Mehrikan spoke a few words which we
+interpreted as a presentation. He filled the cups from the stone vase,
+and then saying something which N&#333;f&#363;hl failed to catch, he held his
+cup before his face with a peculiar movement and put it to his lips.
+As he did this Lev-el-Hedyd clutched my arm and exclaimed:</p>
+
+<p class="bodytext">"The very gesture of the ghost!"</p>
+
+<p class="bodytext">And then as if to himself, "And this is July fourth."</p>
+
+<p class="bodytext">But he drank, as did we all, for our thirst was great and the odor of
+the golden liquid was most alluring. It tasted hotter than the fires
+of Jelbuz. It was also of great potency and gave a fine exhilaration
+to the senses. We became happier at once.</p>
+
+<p class="bodytext">And here it was that J&#257;-kh&#257;z did a fatal thing.  Being near the maid
+and much affected by her beauty, he addressed her as <i>Hur-al-missa</i>,<a id="NtD_4" href="#Nt_4"><sup>[4]</sup></a>
+
+<span class="rightnote"> <a id="Nt_4" href="#NtD_4">[4]</a> The most angelic of women. </span>
+
+ which, of course, she understood not. This
+were well had he gone no further, but he next put his arm about her
+waist with intent to kiss her. Much terrified, she tried to free
+herself. But J&#257;-kh&#257;z, holding her fair chin with his other hand, had
+brought his lips almost to hers when the old man raised his heavy
+staff and brought it down upon our comrade's head with cruel
+swiftness. This falling stick upon a solid skull resounded about the
+dome and echoed through the empty corridors.</p>
+
+<p class="bodytext">Bhoz-j&#257;-kh&#257;z blinked and staggered back.</p>
+
+<p class="bodytext">Then, with fury in his face, he sprang savagely toward the aged man.</p>
+
+<p class="bodytext">But here the younger Mehrikan interfered. Rapidly approaching them
+and shutting tight his bony hand, he shot it from him with startling
+velocity, so directing that it came in contact with the face of
+J&#257;-kh&#257;z who, to our amazement, sat roughly upon the marble pavement,
+the blood streaming from his nostrils. He was a pitiful sight.</p>
+
+<p class="bodytext">Unaccustomed to such warfare we were seriously alarmed, and thought
+him killed perhaps. Ad-el-pate, a mighty wrestler, and of powerful
+build, rushed furiously upon the Mehrikan for whom I trembled. But his
+arm again went out before him, and Ad-el-pate likewise sat. A mournful
+spectacle, and every Persian felt his heart beat fast within him.</p>
+
+<p class="bodytext">By this time J&#257;-kh&#257;z was on his feet again, purple with rage. With
+uplifted scimitar he sprang toward our host. The old man stepped
+between. J&#257;-kh&#257;z, with wanton cruelty, brought his steel upon the
+ancient head, and stretched him upon the floor. For an instant the
+younger one stood horror-stricken, then snatching from the floor the
+patriarch's staff&#38;mdash;a heavy stick with an iron end&#38;mdash;he jumped forward,
+and, quicker than words can tell it, dealt a frightful blow upon the
+head of J&#257;-kh&#257;z which sent him headlong to the ground with a broken
+skull.</p>
+
+<p class="bodytext">All this had happened in a moment, and wild confusion followed. My
+followers drew their arms and rushed upon the Mehrikan. The girl ran
+forward either from terror or to shield her spouse, I know not which,
+when a flying arrow from a sailor's cross-bow pierced her to the
+heart.</p>
+
+<p class="bodytext">This gave the Mehrikan the energy of twenty men.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/7-04_8s.jpg" alt="Image: The slaughter of the Persians">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Slaughter of the Persians </p>
+
+  </td>
+ </tr>
+</table>
+
+<p class="bodytext">He knocked brave Kuzundam senseless with a blow that would have killed
+an ox. Such fury I had not conceived. He brought his flying staff like
+a thunderbolt from Heaven upon the Persian skulls, yet always edging
+toward the door to prevent his enemies surrounding him. Four of our
+number, in as many minutes, joined J&#257;-kh&#257;z upon the floor. Kuzundam,
+Ad-el-pate, Fattan-la&#38;iuml;z-eh, and H&#38;auml;-tak, a sailor, lay stretched upon
+the pavement, all dead or grievously wounded.</p>
+
+<p class="bodytext">So suddenly had this taken place, that I hardly realized what had
+happened. I rushed forward to stay the combat, but he mistook the
+purpose, struck my scimitar with a force that sent it flying through
+the air, and had raised his staff to deal a second for myself, when
+brave Lev-el-Hedyd stepped in to save me, and thrust quickly at him.
+But alas! the Mehrikan warded off his stroke with one yet quicker, and
+brought his stick so swiftly against my comrade's head that it laid
+him with the others.</p>
+
+<p class="bodytext">When Lev-el-Hedyd fell I saw the Mehrikan had many wounds, for my
+comrades had made a savage onslaught. He tottered as he moved back
+into the doorway, where he leaned against the wall for an instant, his
+eyes meeting ours with a look of defiance and contempt that I would
+willingly forget. Then the staff dropped from his hand; he staggered
+out to the great portico, and fell his length upon the pavement.
+N&#333;f&#363;hl hastened to him, but he was dead.</p>
+
+<table class="bwillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/7-04_9s.jpg" alt="Image: The last of the Mehrikans.">
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="bwcaption"> The Last of the Mehrikans </p>
+
+  </td>
+ </tr>
+</table>
+
+<div>
+<br>
+<br>
+</div>
+
+<p class="bodytext">As he fell a wonderful thing took place&#38;mdash;an impossible thing, as I
+look back upon it, but both N&#333;f&#363;hl and I saw it distinctly.</p>
+
+<div class="figright">
+  <img src="images/7-04_10s.jpg" alt="Image: Persian shoe." >
+</div>
+
+<p class="bodytext">In front of the great steps and facing this doorway is a large sitting
+image of George-wash-yn-tun. As the Mehrikan staggered out upon the
+porch, his hands outstretched before him and with Death at his heart,
+this statue slowly bowed its head as if in recognition of a gallant
+fight.</p>
+
+<p class="bodytext">Perhaps it was the sorrowful acceptance of a bitter ending.</p>
+
+<table class="cillo">
+ <tr>
+  <td >
+   <div class="figcenter">
+    <img src="images/7-04_11s.jpg" alt="Image: &#38;ldquo;This statue slowly bowed its head.&#38;rdquo;" >
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+    <p class="ccaption"> "This statue slowly bowed its head." </p>
+
+  </td>
+ </tr>
+ <tr>
+  <td class="spac">
+     <p class="pubmark"> 1902, by Frederick A. Stokes Company. Printed in America. </p>
+  </td>
+ </tr>
+</table>
+
+
+
+
+
+<table>
+<tr><td>
+
+<div class="figcenter">
+  <img src="images/7-07_1s.jpg" alt="Seventh July.">
+<br>
+</div>
+
+
+
+<p class="jdate"><i>7th July</i></p>
+
+<div class="figleft">
+  <img src="images/7-07_2s.jpg" alt="A" >
+</div>
+<p class="bodytext">gain upon the sea.</p>
+
+<p class="bodytext">This time for Persia, bearing our wounded and the ashes of the dead;
+those of the natives are reposing beneath the Great Temple. </p>
+
+<p class="bodytext">The skull of the last Mehrikan I shall present to the museum at Teheran.</p>
+
+<div class="figcenter">
+  <img src="images/7-07_3s.jpg" alt="Image: Sailing ship."  >
+</div>
+
+</td></tr>
+</table>
+
+<div>*** END OF THE PROJECT GUTENBERG EBOOK 27307 ***</div>
+</body>
+</html>
+
